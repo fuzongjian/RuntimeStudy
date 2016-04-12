@@ -12,8 +12,23 @@
 #import "Property_Model.h"
 @implementation Property
 + (void)test{
-    
+//    [self runtime_private_Property];
 }
+#pragma mark --- 快速归档
+/*
+ 原理：用runtime提供的函数遍历Model自身所有的属性，并对属性进行encode和decode操作
+ 核心方法：在Property_Model的基类中重写下面方法
+ -(id)initWithCoder:(NSCoder *)aDecoder
+ -(id)encodeWithCoder:(NSCoder *)aCoder
+ */
+#pragma mark --- json到Model的转化
+/*
+     我们知道字典转模型的方法，但并不明白其中真正的方法实现，我们需要知其然也要知其所以然
+     原理：用runtime提供的函数遍历Model自身所有属性，如果属性在json中有对应的值，则将其赋值
+     核心方法：在NSObject的分类中添加下面方法
+     -(instancetype)initWithDict:(NSDictionary *)dic;(转到Property_Model类中写)
+     用runtime去解析json来给Model赋值
+ */
 #pragma mark --- 获取成员变量（成员变量）
 /*
  一、 Ivar：实例变量类型，是一个指向objc_ivar结构体的指针
@@ -26,7 +41,7 @@
  object_getIvar              获取某个对象成员变量的值
  object_setIvar              设置某个对象成员变量的值
  */
-- (void)runtime_Ivars{
++ (void)runtime_Ivars{
     unsigned int outCount = 0;
     Ivar * ivars = class_copyIvarList([Property_Model class], &outCount);
     for (unsigned int i = 0; i < outCount; i ++) {
@@ -38,7 +53,20 @@
     free(ivars);
 }
 
-#pragma mark --- 获取成员变量
+#pragma mark --- 访问私有变量
++ (void)runtime_private_Property{
+    
+/**
+       我们知道，OC中没有真正意义上的私有变量和方法，要让成员变量私有，要放在m文件中声明，不对外暴露。如果我们知道这个成员变量的名称，可以通过runtime获取成员变量，再通过getIvar来获取它的值
+
+ */
+    
+    Ivar ivar = class_getInstanceVariable([Property_Model class], "str_private");
+    Property_Model * model = [[Property_Model alloc] init];
+    [model modelPlay];
+     NSLog(@"%@",object_getIvar(model, ivar));
+    
+}
 #pragma mark --- 获取所有属性
 /*
  一、objc_property_t:声明属性的类型，是一个指向objc_property结构体的指针

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 @interface UIButton (Click)
-@property (nonatomic, copy) void(^clickAction)(void);
+@property (nonatomic, copy) void(^clickAction)(UIButton * sender);
 @property (nonatomic,strong) NSString * indentifier;
 @end

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ForwardMessage : NSObject
-
++ (void)test;
 @end

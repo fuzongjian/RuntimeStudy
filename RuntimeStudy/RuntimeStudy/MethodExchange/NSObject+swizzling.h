@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (swizzling)
-
++ (void)swizzleSelector:(SEL)originalSelector withSwizzledSelector:(SEL)swizzledSeletor;
 @end

@@ -16,4 +16,5 @@
 @property (nonatomic,strong) NSString * name;
 @property (nonatomic,assign) float  number;
 -(void)modelPlay;
+-(instancetype)initWithDict:(NSDictionary *)dic;
 @end

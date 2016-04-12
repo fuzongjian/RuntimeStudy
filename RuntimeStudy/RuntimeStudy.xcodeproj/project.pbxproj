@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5028CAEA1CBBA36E008874A9 /* NSObject+swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CAE91CBBA36E008874A9 /* NSObject+swizzling.m */; };
+		5028CAED1CBBA3BE008874A9 /* NSMutableArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CAEC1CBBA3BE008874A9 /* NSMutableArray+Swizzling.m */; };
+		5028CAF01CBBA3D0008874A9 /* MethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CAEF1CBBA3D0008874A9 /* MethodExchange.m */; };
+		5028CAF81CBBA468008874A9 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CAF31CBBA468008874A9 /* Cat.m */; };
+		5028CAF91CBBA468008874A9 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CAF51CBBA468008874A9 /* Dog.m */; };
+		5028CAFA1CBBA468008874A9 /* Pig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CAF71CBBA468008874A9 /* Pig.m */; };
+		5028CAFD1CBBA4A9008874A9 /* ForwardMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CAFC1CBBA4A9008874A9 /* ForwardMessage.m */; };
+		5028CB011CBBA684008874A9 /* Runtime_Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 5028CB001CBBA684008874A9 /* Runtime_Message.m */; };
+		504EA1C41CBC858F0035194B /* Dictionary-Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 504EA1C31CBC858F0035194B /* Dictionary-Model.m */; };
 		505EDBFD1CB7A07000A3AFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 505EDBFC1CB7A07000A3AFC4 /* main.m */; };
 		505EDC001CB7A07000A3AFC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 505EDBFF1CB7A07000A3AFC4 /* AppDelegate.m */; };
 		505EDC031CB7A07000A3AFC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505EDC021CB7A07000A3AFC4 /* ViewController.m */; };
@@ -38,6 +47,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5028CAE81CBBA36E008874A9 /* NSObject+swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+swizzling.h"; sourceTree = "<group>"; };
+		5028CAE91CBBA36E008874A9 /* NSObject+swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+swizzling.m"; sourceTree = "<group>"; };
+		5028CAEB1CBBA3BE008874A9 /* NSMutableArray+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Swizzling.h"; sourceTree = "<group>"; };
+		5028CAEC1CBBA3BE008874A9 /* NSMutableArray+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Swizzling.m"; sourceTree = "<group>"; };
+		5028CAEE1CBBA3D0008874A9 /* MethodExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodExchange.h; sourceTree = "<group>"; };
+		5028CAEF1CBBA3D0008874A9 /* MethodExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodExchange.m; sourceTree = "<group>"; };
+		5028CAF21CBBA468008874A9 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		5028CAF31CBBA468008874A9 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		5028CAF41CBBA468008874A9 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		5028CAF51CBBA468008874A9 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		5028CAF61CBBA468008874A9 /* Pig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pig.h; sourceTree = "<group>"; };
+		5028CAF71CBBA468008874A9 /* Pig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pig.m; sourceTree = "<group>"; };
+		5028CAFB1CBBA4A9008874A9 /* ForwardMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardMessage.h; sourceTree = "<group>"; };
+		5028CAFC1CBBA4A9008874A9 /* ForwardMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardMessage.m; sourceTree = "<group>"; };
+		5028CAFF1CBBA684008874A9 /* Runtime_Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime_Message.h; sourceTree = "<group>"; };
+		5028CB001CBBA684008874A9 /* Runtime_Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Message.m; sourceTree = "<group>"; };
+		504EA1C21CBC858F0035194B /* Dictionary-Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Dictionary-Model.h"; sourceTree = "<group>"; };
+		504EA1C31CBC858F0035194B /* Dictionary-Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Dictionary-Model.m"; sourceTree = "<group>"; };
 		505EDBF81CB7A07000A3AFC4 /* RuntimeStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505EDBFC1CB7A07000A3AFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		505EDBFE1CB7A07000A3AFC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +114,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5028CAF11CBBA459008874A9 /* ForwardMessage */ = {
+			isa = PBXGroup;
+			children = (
+				5028CAFB1CBBA4A9008874A9 /* ForwardMessage.h */,
+				5028CAFC1CBBA4A9008874A9 /* ForwardMessage.m */,
+				5028CAF21CBBA468008874A9 /* Cat.h */,
+				5028CAF31CBBA468008874A9 /* Cat.m */,
+				5028CAF41CBBA468008874A9 /* Dog.h */,
+				5028CAF51CBBA468008874A9 /* Dog.m */,
+				5028CAF61CBBA468008874A9 /* Pig.h */,
+				5028CAF71CBBA468008874A9 /* Pig.m */,
+			);
+			path = ForwardMessage;
+			sourceTree = "<group>";
+		};
+		5028CAFE1CBBA579008874A9 /* Model-Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				504EA1C21CBC858F0035194B /* Dictionary-Model.h */,
+				504EA1C31CBC858F0035194B /* Dictionary-Model.m */,
+			);
+			path = "Model-Dictionary";
+			sourceTree = "<group>";
+		};
 		505EDBEF1CB7A07000A3AFC4 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +165,8 @@
 				505EDBFF1CB7A07000A3AFC4 /* AppDelegate.m */,
 				505EDC011CB7A07000A3AFC4 /* ViewController.h */,
 				505EDC021CB7A07000A3AFC4 /* ViewController.m */,
+				5028CAFE1CBBA579008874A9 /* Model-Dictionary */,
+				5028CAF11CBBA459008874A9 /* ForwardMessage */,
 				505EDC2E1CB7A0DD00A3AFC4 /* Message */,
 				505EDC2F1CB7A0DD00A3AFC4 /* MethodExchange */,
 				505EDC301CB7A0DD00A3AFC4 /* Property */,
@@ -155,6 +208,8 @@
 		505EDC2E1CB7A0DD00A3AFC4 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				5028CAFF1CBBA684008874A9 /* Runtime_Message.h */,
+				5028CB001CBBA684008874A9 /* Runtime_Message.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -162,6 +217,12 @@
 		505EDC2F1CB7A0DD00A3AFC4 /* MethodExchange */ = {
 			isa = PBXGroup;
 			children = (
+				5028CAEE1CBBA3D0008874A9 /* MethodExchange.h */,
+				5028CAEF1CBBA3D0008874A9 /* MethodExchange.m */,
+				5028CAE81CBBA36E008874A9 /* NSObject+swizzling.h */,
+				5028CAE91CBBA36E008874A9 /* NSObject+swizzling.m */,
+				5028CAEB1CBBA3BE008874A9 /* NSMutableArray+Swizzling.h */,
+				5028CAEC1CBBA3BE008874A9 /* NSMutableArray+Swizzling.m */,
 			);
 			path = MethodExchange;
 			sourceTree = "<group>";
@@ -309,11 +370,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5028CAFA1CBBA468008874A9 /* Pig.m in Sources */,
+				5028CAF91CBBA468008874A9 /* Dog.m in Sources */,
+				504EA1C41CBC858F0035194B /* Dictionary-Model.m in Sources */,
 				505EDC031CB7A07000A3AFC4 /* ViewController.m in Sources */,
 				505EDC001CB7A07000A3AFC4 /* AppDelegate.m in Sources */,
+				5028CAEA1CBBA36E008874A9 /* NSObject+swizzling.m in Sources */,
+				5028CAED1CBBA3BE008874A9 /* NSMutableArray+Swizzling.m in Sources */,
+				5028CAF81CBBA468008874A9 /* Cat.m in Sources */,
 				505EDC391CB7B10900A3AFC4 /* Property_Model.m in Sources */,
+				5028CAFD1CBBA4A9008874A9 /* ForwardMessage.m in Sources */,
+				5028CAF01CBBA3D0008874A9 /* MethodExchange.m in Sources */,
 				505EDC3F1CB7B66C00A3AFC4 /* Property.m in Sources */,
 				505EDC331CB7A18D00A3AFC4 /* UIButton+Click.m in Sources */,
+				5028CB011CBBA684008874A9 /* Runtime_Message.m in Sources */,
 				505EDBFD1CB7A07000A3AFC4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +610,7 @@
 				505EDC271CB7A07000A3AFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		505EDC281CB7A07000A3AFC4 /* Build configuration list for PBXNativeTarget "RuntimeStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +619,7 @@
 				505EDC2A1CB7A07000A3AFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		505EDC2B1CB7A07000A3AFC4 /* Build configuration list for PBXNativeTarget "RuntimeStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +628,7 @@
 				505EDC2D1CB7A07000A3AFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
