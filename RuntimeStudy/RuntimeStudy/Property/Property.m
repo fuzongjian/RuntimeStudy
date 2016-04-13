@@ -13,6 +13,7 @@
 @implementation Property
 + (void)test{
 //    [self runtime_private_Property];
+    [self runtime_property];
 }
 #pragma mark --- 快速归档
 /*
@@ -31,7 +32,7 @@
  */
 #pragma mark --- 获取成员变量（成员变量）
 /*
- 一、 Ivar：实例变量类型，是一个指向objc_ivar结构体的指针
+ 一、 Ivar：实例变量类型，是一个指向objc_ivar结构体的指针,可以获取成员变量（包括私有成员变量）、属性
  typedef struct objc_ivar *Ivar;
  二、  操作函数
  class_copyIvarList          获取所有成员变量
@@ -69,7 +70,7 @@
 }
 #pragma mark --- 获取所有属性
 /*
- 一、objc_property_t:声明属性的类型，是一个指向objc_property结构体的指针
+ 一、objc_property_t:声明属性的类型，是一个指向objc_property结构体的指针,只能获取所有的属性，并不能获取成员变量
  typedef struct objc_property *objc_porperty_t;
  二、操作函数
  class_copyPropertyList      获取所有属性（并不会获取无@property声明的成员变量）

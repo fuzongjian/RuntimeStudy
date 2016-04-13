@@ -54,7 +54,7 @@
     }
     return self;
 }
--(id)encodeWithCoder:(NSCoder *)aCoder{
+-(void)encodeWithCoder:(NSCoder *)aCoder{
     unsigned int outCount;
     Ivar * ivars = class_copyIvarList([self class], &outCount);
     for (int i = 0; i < outCount; i ++) {
@@ -62,6 +62,5 @@
         NSString * key = [NSString stringWithUTF8String:ivar_getName(ivar)];
         [aCoder encodeObject:[self valueForKey:key] forKey:key];
     }
-    return self;
 }
 @end
